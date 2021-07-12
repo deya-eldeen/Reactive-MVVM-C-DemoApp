@@ -17,7 +17,7 @@ class HolidaysService {
         typealias Parameters = [String : Any]
         
         let parameters: Parameters = ["country": country,
-                                      "year": "2019"]
+                                      "year": "2020"]
         
         APIClient.shared.get(urlString: API_GET_HOLIDAYS, parameters: parameters, success: { (code, holidays) in
             success(code, holidays)
